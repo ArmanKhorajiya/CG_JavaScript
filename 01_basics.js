@@ -69,3 +69,9 @@
 // true
 
 // Q10
+// try {
+//   let a = b;
+//   console.log(a);
+// } catch (error) {
+//   console.log("Something is Not Good");
+// }
