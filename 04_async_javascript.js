@@ -46,3 +46,21 @@
 //   let names = toppers.map((student) => student.name);
 //   console.log(names);
 // });
+
+// ex:
+// function getProducts(callback) {
+//   setTimeout(() => {
+//     let products = [
+//       { name: "Laptop", price: 50000 },
+//       { name: "Phone", price: 30000 },
+//       { name: "Tablet", price: 20000 },
+//     ];
+//     callback(products);
+//   }, 2000);
+// }
+// getProducts((products) => {
+//   let costlier = products.filter((product) => product.price > 25000);
+//   let names = costlier.map((product) => product.name);
+//   console.log(names);
+// });
+
