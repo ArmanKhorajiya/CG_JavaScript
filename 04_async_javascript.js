@@ -64,3 +64,25 @@
 //   console.log(names);
 // });
 
+// Promise:
+function getProducts() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      let products = [
+        { name: "Laptop", price: 50000 },
+        { name: "Phone", price: 30000 },
+        { name: "Tablet", price: 20000 },
+      ];
+      resolve(products);
+    }, 2000);
+  });
+}
+getProducts()
+  .then((products) => {
+    let costlier = products.filter((product) => product.price >= 25000);
+    let names = costlier.map((product) => product.name);
+    console.log(names);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
