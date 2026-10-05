@@ -48,6 +48,7 @@
 // });
 
 // ex:
+// Q1
 // function getProducts(callback) {
 //   setTimeout(() => {
 //     let products = [
@@ -65,24 +66,76 @@
 // });
 
 // Promise:
-function getProducts() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      let products = [
-        { name: "Laptop", price: 50000 },
-        { name: "Phone", price: 30000 },
-        { name: "Tablet", price: 20000 },
-      ];
-      resolve(products);
-    }, 2000);
-  });
-}
-getProducts()
-  .then((products) => {
-    let costlier = products.filter((product) => product.price >= 25000);
-    let names = costlier.map((product) => product.name);
-    console.log(names);
-  })
-  .catch((error) => {
-    console.log(error);
-  });
+// function getProducts() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       let products = [
+//         { name: "Laptop", price: 50000 },
+//         { name: "Phone", price: 30000 },
+//         { name: "Tablet", price: 20000 },
+//       ];
+//       resolve(products);
+//     }, 2000);
+//   });
+// }
+// getProducts()
+//   .then((products) => {
+//     let costlier = products.filter((product) => product.price >= 25000 );
+//     let names = costlier.map((product) => product.name);
+//     console.log(names);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+// Q2
+// function getStudents() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       let students = [
+//         { name: "Arman", marks: 90 },
+//         { name: "Aman", marks: 85 },
+//         { name: "Anim", marks: 80 },
+//       ];
+//       resolve(students);
+//     }, 2000);
+//   });
+// }
+// getStudents()
+//   .then((students) => {
+//     let toppers = students.filter((student) => student.marks > 80);
+//     let names = toppers.map((stu) => stu.name);
+//     console.log(names);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+// Async & Await:
+// Q3
+// function getStudents() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       let students = [
+//         { name: "Arman", marks: 95 },
+//         { name: "Aman", marks: 90 },
+//         { name: "Anim", marks: 85 },
+//       ];
+//       resolve(students);
+//     }, 2000);
+//   });
+// }
+// async function showStudents() {
+//   try {
+//     let students = await getStudents();
+//     let top = students.filter((student) => student.marks >= 80);
+//     let names = top.map((stu) => stu.name);
+//     console.log(names);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+// showStudents();
+
+
+// fetch():
