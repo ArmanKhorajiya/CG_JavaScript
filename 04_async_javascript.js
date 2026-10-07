@@ -137,7 +137,7 @@
 // }
 // showStudents();
 
-// fetch() Using gate:
+// fetch() Using get:
 // let api = "https://jsonplaceholder.typicode.com/users";
 // fetch(api)
 //   .then((res) => {
