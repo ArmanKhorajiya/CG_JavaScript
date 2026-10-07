@@ -176,3 +176,25 @@
 //   });
 
 // Q5
+// let api = "https://jsonplaceholder.typicode.com/users";
+// let newUser = {
+//   name: "Arman",
+//   username: "arman123",
+//   email: "arman@example.com",
+// };
+// fetch(api, {
+//   method: "post",
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+//   body: JSON.stringify(newUser),
+// })
+//   .then((res) => {
+//     return res.json();
+//   })
+//   .then((user) => {
+//     console.log(user);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
